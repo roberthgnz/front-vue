@@ -1,6 +1,6 @@
 <template>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="closeModal" class="relative z-10">
+    <Dialog as="div" @close="closeModal" class="relative z-50">
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"
@@ -13,7 +13,7 @@
         <div class="fixed inset-0 bg-black bg-opacity-25" />
       </TransitionChild>
 
-      <div class="fixed inset-0 overflow-y-auto">
+      <div class="fixed inset-0 overflow-y-auto z-50">
         <div
           class="flex min-h-full items-center justify-center p-4 text-center"
         >
